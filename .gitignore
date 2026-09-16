@@ -3,3 +3,12 @@
 *.dSYM/
 a.out
 .cph/
+*.bin
+13_bear
+14_elephent
+# All binary files without extension on Mac/Linux
+*
+!*.*
+!.gitignore
+!README.md
+
