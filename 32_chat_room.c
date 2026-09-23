@@ -11,7 +11,7 @@ int main()
     int i=0;
     int j=0;
 
-    while(arr[i]=='\0' && j<5)
+    while(arr[i]!='\0' && j<5)
     {
         if(arr[i] == brr[j])
           {

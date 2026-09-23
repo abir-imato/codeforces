@@ -1,29 +1,31 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
-    int n;
-    scanf("%d",&n);
+    char arr[100];
+    scanf("%s",arr);
 
-    int a,b=0,c=0;
+    char brr[5] = "hello";
 
-    for(int i=1;i<=n;i++)
-       {
-        scanf("%d",&a);
-        if(a==0)
+    int i=0;
+    int j=0;
+
+    while(arr[i]!='\0' && j<5)
+    {
+        if(arr[i] == brr[j])
           {
-            b=0;
+            j++;
           }
-        else{
-            c=1;
-        }  
-       }
-
-    if(b==0 && c==0){
-        printf("EASY");
-    }   
-    else{
-        printf("HARD");
+    i++;
     }
+
+    if(j == 5){
+        printf("YES");
+    }
+    else{
+        printf("NO");
+    }
+
     return 0;
 }
